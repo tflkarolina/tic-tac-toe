@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Jost, sans-serif;
+}
+
+body {
+    color: rgb(161, 20, 171);
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(53,0,226);
+    background: linear-gradient(166deg, rgba(53,0,226,1) 0%, rgba(222,207,172,1) 100%);
+}
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    color: rgb(237, 193, 240);
+    cursor: pointer;
+    transition: 0.3s;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.box:nth-child(3n) {
+    border-right: none;
+}
+/* after 6 delete the border-bottom */
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+
+button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(222,207,172,1);
+    font-size:15px;
+    transition: 200ms transform;
+    font-weight: 500;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
