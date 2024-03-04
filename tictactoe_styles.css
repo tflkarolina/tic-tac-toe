@@ -5,8 +5,16 @@
     font-family: Jost, sans-serif;
 }
 
+:root {
+    --winning-blocks: rgb(109, 109, 245);
+}
+
 body {
     color: rgb(161, 20, 171);
+}
+
+h1 {
+    color: rgb(20, 20, 20);
 }
 
 .container {
