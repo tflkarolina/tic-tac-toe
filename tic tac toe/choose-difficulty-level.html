@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="tictactoe_styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h1 id="playerText">tic tac toe game</h1>
+        <h2>1 Player mode</h2>
+        <h3 id="chooseMode">choose difficulty level:</h3>
+        <div class="button-container">
+            <button id="oneLevel">1</button>
+            <button id="twoLevel">2</button>
+        </div>
+        <button id="backToMenu">Back to Menu</button>    
+    </div>
+
+    <script>
+        function backToMenu() {
+            const backToMenu = document.getElementById('backToMenu');
+            backToMenu.addEventListener('click', () => {
+                window.location.href = 'choose-mode.html';
+            });
+        }
+        backToMenu();
+        function chooseDifficultyLevel () {
+            const oneLevel = document.getElementById('oneLevel');
+            const twoLevel = document.getElementById('twoLevel');
+            // oneLevel.addEventListener('click', () => {
+                
+            // });
+            // twoLevel.addEventListener('click', () => {
+                
+            // });
+        }
+    </script>
+</body>
+</html>
