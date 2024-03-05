@@ -34,7 +34,7 @@ function boxClicked(e) {
             currentPlayer = O
             setTimeout(makeCPUMove, 500); //opoznienie
         } else {
-            playerText.innerText = "It's a draw!";
+            playerText.innerText = "It's a draw!"; //remis
         }
     }
 }
