@@ -30,13 +30,14 @@
         function chooseDifficultyLevel () {
             const oneLevel = document.getElementById('oneLevel');
             const twoLevel = document.getElementById('twoLevel');
-            // oneLevel.addEventListener('click', () => {
-                
-            // });
-            // twoLevel.addEventListener('click', () => {
-                
-            // });
+            oneLevel.addEventListener('click', () => {
+                window.location.href = 'tic-tac-toe-1-player.html';
+            });
+            twoLevel.addEventListener('click', () => {
+                window.location.href = 'tic-tac-toe-1-player-difficult.html';
+            });
         }
+        chooseDifficultyLevel();
     </script>
 </body>
 </html>
